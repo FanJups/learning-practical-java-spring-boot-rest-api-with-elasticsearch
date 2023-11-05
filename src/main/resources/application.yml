@@ -8,6 +8,21 @@ logging:
 spring:
   main:
     banner-mode: OFF
+  jackson:
+    property-naming-strategy: SNAKE_CASE
 
 server:
   port: 8001
+
+management:
+  elastic:
+    metrics:
+      export:
+        step: 30s
+        user-name: username
+        password: password
+
+springdoc:
+  swagger-ui:
+    supported-submit-methods:
+      - get

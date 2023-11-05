@@ -7,13 +7,14 @@
   <include
     resource="org/springframework/boot/logging/logback/file-appender.xml" />
 
-<!-- 
+
+<!--
   <logger
     name="org.springframework.data.elasticsearch.client.WIRE"
     level="trace">
     <appender-ref ref="CONSOLE" />
   </logger>
- -->
+-->
 
   <logger name="com.course" level="debug" additivity="false">
     <appender-ref ref="CONSOLE" />
